@@ -1,6 +1,8 @@
 let x;
+let y;
 function textdata(){
-return document.getElementById("area").value;
+  y=document.getElementById("area").value;
+return y
 }
 function decode(){
 x=textdata();
@@ -13,13 +15,13 @@ x=encodeURI(x);
 copy();
 }
 function copy(){
-if (x==""){
+if (y==""){
 alert("文字が入力されていません");
 }
 else{
 navigator.clipboard.writeText(x);
 alert(x+"をコピーしました");
-if(x=="1998はｸｿ!"){
+if(y=="1998はｸｿ!"){
 x=fetch("ero.txt");
 alert("ん？ちょっと待てよ？、お前なんで秘密の隠し機能を知っている！");
 alert("エンコードしたわしの描いた超短編小説をクリップボードにコピーしといたぞ！");
