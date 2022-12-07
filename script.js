@@ -1,5 +1,7 @@
 let x;
 let y;
+// xはエンコードデコードする雑用変数です。
+// yにはtextdeta関数を実行することによって取得できるtextarea内の値が入っています。
 function textdata(){
   y=document.getElementById("area").value;
 return y
