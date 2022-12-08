@@ -28,7 +28,7 @@ alert("文字が入力されていません");
   //隠し機能
 x=fetch("ero.txt").then(response=>response.text())
   .then(code=>{
-navigator.clipboard.writeText(code);
+navigator.clipboard.writeText(code)
 });
   document.getElementById("area").value="";
   //textarea内の文字を削除
