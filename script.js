@@ -26,7 +26,8 @@ if (textarea==""){
 alert("文字が入力されていません");
 }else if(textarea=="1998はｸｿ!"){
   //隠し機能
-x=fetch("ero.txt").then(response=>response.text())
+x=fetch("ero.txt");
+  .then(response=>response.text());
   .then(code=>{
 navigator.clipboard.writeText(code)
 });
