@@ -18,9 +18,9 @@ copy();
 }
 function copy(){
   y=document.getElementById("area");
-if (y==""){
+if (x==""){
 alert("文字が入力されていません");
-}else if(y=="1998はｸｿ!"){
+}else if(x=="1998はｸｿ!"){
 x=fetch("ero.txt").then(response=>response.text())
   .then(code=>{
 navigator.clipboard.writeText(code);
