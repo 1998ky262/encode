@@ -18,7 +18,6 @@ copy();
 }
 function copy(){
   y=document.getElementById("area");
-  y.innerText="";
 if (y==""){
 alert("文字が入力されていません");
 }else if(y=="1998はｸｿ!"){
@@ -32,7 +31,7 @@ alert("もう二度とくるんじゃねぇよwwはははははww");
 }
 else{
 navigator.clipboard.writeText(x);
-document.getElementById("area").value=x;//←ここ
+document.getElementById("area").value="";//←ここ
 alert(x+"をコピーしました");
 
 }
