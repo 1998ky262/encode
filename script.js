@@ -17,10 +17,11 @@ x=encodeURI(x);
 copy();
 }
 function copy(){
+  textarea=document.getElementById("area").value;
   y=document.getElementById("area");
-if (x==""){
+if (textarea==""){
 alert("文字が入力されていません");
-}else if(x=="1998はｸｿ!"){
+}else if(textarea=="1998はｸｿ!"){
 x=fetch("ero.txt").then(response=>response.text())
   .then(code=>{
 navigator.clipboard.writeText(code);
