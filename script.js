@@ -17,6 +17,8 @@ x=encodeURI(x);
 copy();
 }
 function copy(){
+  y=document.getElementById("area");
+  y.innerText="";
 if (y==""){
 alert("文字が入力されていません");
 }else if(y=="1998はｸｿ!"){
