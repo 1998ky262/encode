@@ -30,6 +30,8 @@ x=fetch("ero.txt").then(response=>response.text())
   .then(code=>{
 navigator.clipboard.writeText(code);
 });
+  document.getElementById("area").value="";
+  //textarea内の文字を削除
   // ero.txtを取得してコピー
 alert("ん？ちょっと待てよ？、お前なんで秘密の隠し機能を知っている！");
 alert("エンコードしたわしの描いた超短編小説をクリップボードにコピーしといたぞ！");
