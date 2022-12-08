@@ -19,12 +19,7 @@ copy();
 function copy(){
 if (y==""){
 alert("文字が入力されていません");
-}
-else{
-navigator.clipboard.writeText(x);
-document.getElementById("area").value=x;//←ここ
-alert(x+"をコピーしました");
-if(y=="1998はｸｿ!"){
+}else if(y=="1998はｸｿ!"){
 x=fetch("ero.txt").then(response=>response.text())
   .then(code=>{
 navigator.clipboard.writeText(code);
@@ -33,5 +28,10 @@ alert("ん？ちょっと待てよ？、お前なんで秘密の隠し機能を�
 alert("エンコードしたわしの描いた超短編小説をクリップボードにコピーしといたぞ！");
 alert("もう二度とくるんじゃねぇよwwはははははww");
 }
+else{
+navigator.clipboard.writeText(x);
+document.getElementById("area").value=x;//←ここ
+alert(x+"をコピーしました");
+
 }
 }
