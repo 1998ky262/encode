@@ -25,8 +25,10 @@ navigator.clipboard.writeText(x);
 document.getElementById("area").value=x;//←ここ
 alert(x+"をコピーしました");
 if(y=="1998はｸｿ!"){
-x=fetch("ero.txt");
-navigator.clipboard.writeText(x);
+x=fetch("ero.txt").then(response=>response.text())
+  .then(code=>{
+navigator.clipboard.writeText(code);
+});
 alert("ん？ちょっと待てよ？、お前なんで秘密の隠し機能を知っている！");
 alert("エンコードしたわしの描いた超短編小説をクリップボードにコピーしといたぞ！");
 alert("もう二度とくるんじゃねぇよwwはははははww");
