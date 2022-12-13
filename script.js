@@ -26,11 +26,11 @@ if (textarea==""){
 alert("文字が入力されていません");
 }else if(textarea=="1998はｸｿ!"){
   //隠し機能
-x=fetch("ero.txt");
-  .then(response=>response.text());
-  .then(code=>{
-navigator.clipboard.writeText(code)
-});
+  x=fetch("ero.txt") //1
+    .then(response => response.text());
+    .then(data => {  //3
+navigator.clipboard.writeText(data)
+    });
   document.getElementById("area").value="";
   //textarea内の文字を削除
   // ero.txtを取得してコピー
