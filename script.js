@@ -4,20 +4,20 @@ let y;
 // yも雑用
 function textdata(){
   y=document.getElementById("area").value;
-return y
+  return y
   // 入力した文字を取得
 }
 function decode(){
-x=textdata();
-x=decodeURI(x);
-  // デコード
-copy();
+  x=textdata();
+  x=decodeURI(x);
+    // デコード
+  copy();
 }
 function encode(){
-x=textdata();
-x=encodeURI(x);
-  // エンコード
-copy();
+  x=textdata();
+  x=encodeURI(x);
+    // エンコード
+  copy();
 }
 function copy(){
   textarea=document.getElementById("area").value;
