@@ -24,7 +24,8 @@ function copy(){
   // 変数textareaに入力した文字を入れます
   if (textarea==""){
     alert("文字が入力されていません");
-  }else if(textarea=="1998はｸｿ!"){
+  }
+  else if(textarea=="1998はｸｿ!"){
     //隠し機能
     let url = 'ero.txt'; //遅延情報のJSON
     fetch(url)
@@ -38,7 +39,8 @@ function copy(){
     alert("ん？ちょっと待てよ？、お前なんで秘密の隠し機能を知っている！");
     alert("エンコードしたわしの描いた超短編小説をクリップボードにコピーしといたぞ！");
     alert("もう二度とくるんじゃねぇよwwはははははww");
-  }else{
+  }
+  else{
     navigator.clipboard.writeText(x);
     document.getElementById("area").value="";
       //textarea内の文字を削除
