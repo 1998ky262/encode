@@ -1,5 +1,6 @@
 let x;
 let y;
+let thedata;
 // xはエンコードデコードする雑用変数です。
 // yも雑用
 function textdata(){
@@ -30,8 +31,8 @@ function copy(){
     let url = 'ero.txt'; //遅延情報のJSON
     fetch(url)
     .then(function (data) {
-      return data.json(); // 読み込むデータをJSONに設定
-      navigator.clipboard.writeText(data)
+      thedata=data.json(); // 読み込むデータをJSONに設定
+      navigator.clipboard.writeText(thedata);
     })
     document.getElementById("area").value="";
     //textarea内の文字を削除
